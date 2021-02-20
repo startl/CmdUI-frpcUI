@@ -33,7 +33,7 @@ host=cmd
 start_ delay=0  
 **::start_ Hide, whether to hide after startup, 0: do not hide, 1: do not hide**  
 start_ hide=0  
-**::action performed when dragging and dropping a file onto a node surface,% s represents the name of the drag and drop file**  
+**::action performed when dragging and dropping a file onto UI,% s represents the name of the drag and drop file**  
 on_ drop=Exe64 bitDetector.exe  -f %s  
 
 OK, if there is no problem, the program starts, drag and drop PE file to the interface, and the detection result will be displayed
@@ -75,7 +75,7 @@ host=cmd
 start_delay=0  
 **::start_hide，启动后是否隐藏，0：不隐藏，1：**  
 start_hide=0  
-**::当拖放文件到节面上时执行的动作，%s代表拖放的文件名**  
+**::当拖放文件到界面上时执行的动作，%s代表拖放的文件名**  
 on_drop=Exe64bitDetector.exe -f %s  
 
 OK，如果没有问题，则程序启动，拖放pe文件到界面，会显示探测结果
