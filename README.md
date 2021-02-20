@@ -1,7 +1,7 @@
 **Welcome to the CmdUI-frpcUI wiki!**
 
-The cross platform command line UI wrapper is based on vs2019 + QT, using INI file configuration action, can be used as a general command line program UI.
-Of course, it can also be used as the UI interface of frpc, so that there is no need to display the command line window on the desktop to keep the desktop fresh.
+The cross platform command line UI wrapper is based on vs2019 + QT, using INI file configuration action, can be used as a general command line program UI.  
+Of course, it can also be used as the UI interface of *frpc*, so that there is no need to display the command line window on the desktop to keep the desktop fresh.
 
 After startup, the icon will be displayed in the system tray, and the software name configured by ini will be displayed when the mouse is put up.
 Target program default name CmdUI.exe (Windows), which can be changed to another name. When starting, the configuration execution actions in the INI file with the same name as the program will be read.
