@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>cmd.ico</file>
+        <file>cmd.png</file>
+        <file>cmd_2.ico</file>
+    </qresource>
+</RCC>
