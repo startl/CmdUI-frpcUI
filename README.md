@@ -23,7 +23,7 @@ on_ exit=taskkill /f /im  frpc.exe
 
 OK, if there is no problem, the program will create an icon in the tray, and FRPC starts successfully  
 
-**## Another example**: to wrap a PE file as a 32-bit or 64 bit command line, change the program name to exe64bitdetectorUI and put it in exe64 bitDetector.exe Command line program directory, in the same directory to create an exe64 bitDetector.ini (utf8 encoding)  
+**## Another example**: to wrap a PE file as a 32-bit or 64 bit command line, change the program name to exe64bitdetectorUI.exe and put it in exe64 bitDetector.exe Command line program directory, in the same directory to create an exe64bitdetectorUI.ini (utf8 encoding)  
 The description of ini is as follows:  
 **::title, the name of the software, the name of the tray display and the name of the upper left corner of the main interface to facilitate multiple runtime identification**  
 title=Exe64bitDetector  
@@ -65,7 +65,7 @@ on_exit=taskkill /f /im frpc.exe
 
 OK，如果没有问题，则程序会在托盘建立图标，frpc启动成功  
 
-**再例如**：要作为PE文件32位还是64位的命令行包装，则更改程序名为Exe64bitDetectorUI.exe，放到Exe64bitDetector.exe命令行程序目录下，在同目录下建一个Exe64bitDetector.ini(UTF8编码)  
+**再例如**：要作为PE文件32位还是64位的命令行包装，则更改程序名为Exe64bitDetectorUI.exe，放到Exe64bitDetector.exe命令行程序目录下，在同目录下建一个Exe64bitDetectorUI.ini(UTF8编码)  
 ini内容说明如下：  
 **::title,软件名称，托盘显示的名称和主界面左上角的名称，方便多个运行时识别**  
 title=Exe64bitDetector  
