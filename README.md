@@ -11,7 +11,7 @@
 
 目标程序默认名称CmdUI.exe(windows)，可以改成其它名字，启动时会读取和程序同名的ini文件里面的配置执行动作。
 
-**例如**，要作为frpc的UI报装，则将程序名改成frpcUI.exe, 放到frpc.exe同目录下，在同目录下建立一个frcpUI.ini的文件(UTF8编码)  
+**例如**，要作为frpc的UI包装，则将程序名改成frpcUI.exe, 放到frpc.exe同目录下，在同目录下建立一个frcpUI.ini的文件(UTF8编码)  
 ini内容说明如下：
 [base]  
 **软件名称，托盘显示的名称和主界面左上角的名称，方便多个运行时识别**  
