@@ -1,6 +1,7 @@
 Command line UI wrapper, based on vs2019 + QT, can cross platform.  
 Using INI file configuration action, it can be used as the UI of general command line program.  
 Of course, it can also be used as the UI interface of FRPC, so that there is no need to display the command line window on the desktop to keep the desktop fresh.  
+
 Features:  
 **The command line black window program is packaged as a tray icon, and the command line output is redirected to the text box of the program  
 **Using INI file customization function, you can customize whether to display the tray icon, and click the close button to exit  
