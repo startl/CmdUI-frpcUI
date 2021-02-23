@@ -72,7 +72,7 @@ frmMain::frmMain(QWidget *parent)
 		//ui.recvEdit->appendPlainText(strOut);
 	}
 
-	if (!mCfg->value("func/start_hide").toBool())
+	if (!mCfg->value("func/start_hide", 1).toBool())
 		show();
 }
 
