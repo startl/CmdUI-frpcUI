@@ -46,7 +46,7 @@ start_hide=0
 **启动后不显示托盘图标，默认显示**
 show_tray=0
 **启动后不自动隐藏，默认隐藏**
-close_btn_exit=1
+close_btn_exit=1  
 [action]  
 **::当拖放文件到界面上时执行的动作，%s代表拖放的文件名**  
 on_drop=Exe64bitDetector.exe -f %s  
