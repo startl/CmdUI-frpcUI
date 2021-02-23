@@ -45,8 +45,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutDir>..\..\Green\[Proxy]\frp_0.33.0_windows_amd64</OutDir>
-    <TargetName>frpcui</TargetName>
+    <OutDir>D:\Green\[Proxy]\frp_0.33.0_windows_amd64</OutDir>
+    <TargetName>Exe64bitDetectorUI</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>

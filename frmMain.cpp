@@ -18,24 +18,28 @@ frmMain::frmMain(QWidget *parent)
 
 	//this->setAttribute(Qt::WA_DeleteOnClose);
 
-	CTrayMenu* tray_menu = new CTrayMenu();
-	connect(tray_menu, SIGNAL(onActionQuit()), this, SLOT(onQuit()));
-	//connect(tray_menu, SIGNAL(onActionPause(bool)), this, SLOT(onPauseBrowser(bool)));
-	mTray.setContextMenu(tray_menu);
-
-	mTray.setIcon(QIcon(":/icon/cmd.png"));
-
-	connect(&mTray, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), this, 
-		SLOT(trayIsActived(QSystemTrayIcon::ActivationReason)));
 	
-	mTray.show();
+	mCfg = new QSettings(gPath.appDir + "/" + gPath.appName + ".ini", QSettings::IniFormat);
+	mCfg->setIniCodec(QTextCodec::codecForName("UTF8"));
+
+	if (mCfg->value("func/show_tray").toBool())
+	{
+		CTrayMenu* tray_menu = new CTrayMenu();
+		connect(tray_menu, SIGNAL(onActionQuit()), this, SLOT(onQuit()));
+		//connect(tray_menu, SIGNAL(onActionPause(bool)), this, SLOT(onPauseBrowser(bool)));
+		mTray.setContextMenu(tray_menu);
+
+		mTray.setIcon(QIcon(":/icon/cmd.png"));
+
+		connect(&mTray, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), this,
+			SLOT(trayIsActived(QSystemTrayIcon::ActivationReason)));
+
+		mTray.show();
+	}
 
 	ui.recvEdit->setReadOnly(true);
 	setAcceptDrops(true);
 	ui.recvEdit->setAcceptDrops(false);
-
-	mCfg = new QSettings(gPath.appDir + "/" + gPath.appName + ".ini", QSettings::IniFormat);
-	mCfg->setIniCodec(QTextCodec::codecForName("UTF8"));
 
 	QString title = mCfg->value("base/title", "CmdUI").toString() + "-[CmdUI]";
 	mTray.setToolTip(title);
@@ -45,7 +49,7 @@ frmMain::frmMain(QWidget *parent)
 	connect(p, SIGNAL(readyReadStandardOutput()), this, SLOT(onCmdReadOutput()));
 	connect(p, SIGNAL(readyReadStandardError()), this, SLOT(onCmdReadError()));
 
-	uint nDelay = mCfg->value("base/start_delay", 0).toUInt();
+	uint nDelay = mCfg->value("func/start_delay", 0).toUInt();
 	CTimeHelper::sleep(nDelay * 1000);
 
 	QString host = mCfg->value("base/host", "").toString();
@@ -53,7 +57,7 @@ frmMain::frmMain(QWidget *parent)
 	p->start(host);
 	p->waitForStarted();
 
-	QString cmdStart = mCfg->value("base/on_start", "").toString();
+	QString cmdStart = mCfg->value("action/on_start", "").toString();
 	//!host.isEmpty() && !
 	if (!cmdStart.isEmpty())
 	{
@@ -68,7 +72,8 @@ frmMain::frmMain(QWidget *parent)
 		//ui.recvEdit->appendPlainText(strOut);
 	}
 
-	if (!mCfg->value("base/start_hide").toBool()) show();
+	if (!mCfg->value("func/start_hide").toBool())
+		show();
 }
 
 
@@ -89,18 +94,30 @@ void frmMain::onCmdReadError()
 
 void frmMain::closeEvent(QCloseEvent* event)
 {
-	event->ignore(); 
-
-	hide(); 
+	if (!mCfg->value("func/close_btn_exit", 0).toBool())
+	{
+		event->ignore();
+		hide();
+	}
+	else
+	{
+		event->accept();
+	}
 }
 
 void frmMain::changeEvent(QEvent* event)
 {
 	if ((event->type() == QEvent::WindowStateChange) && isMinimized())
 	{
-		event->ignore();
-
-		hide();
+		if (!mCfg->value("func/close_btn_exit", 0).toBool()) 
+		{
+			event->ignore();
+			hide();
+		}
+		else
+		{
+			event->accept();
+		}
 		//mTray.showMessage("SystemTrayIcon", QObject::trUtf8("程序最小化到托盘"), QSystemTrayIcon::Information, 5000);
 	}
 }
@@ -126,7 +143,7 @@ void frmMain::dropEvent(QDropEvent* event)
 	connect(p, SIGNAL(readyReadStandardOutput()), this, SLOT(onCmdReadOutput()));
 	connect(p, SIGNAL(readyReadStandardError()), this, SLOT(onCmdReadError()));
 
-	QString cmdDrop = mCfg->value("base/on_drop", "").toString();
+	QString cmdDrop = mCfg->value("action/on_drop", "").toString();
 	if (!cmdDrop.isEmpty())
 	{
 		QStringList list = cmdDrop.split("|");
@@ -178,7 +195,7 @@ void frmMain::onQuit()
 	if (host.isEmpty()) return;
 
 	QProcess* p = new QProcess(this);
-	QString cmdExit = mCfg->value("base/on_exit", "").toString();
+	QString cmdExit = mCfg->value("action/on_exit", "").toString();
 	if (!cmdExit.isEmpty())
 	{
 		QStringList list = cmdExit.split("|");
@@ -190,7 +207,7 @@ void frmMain::onQuit()
 		}
 	}
 
-	// uint nDelay = mCfg->value("base/exit_delay", 0).toUInt();
+	// uint nDelay = mCfg->value("func/exit_delay", 0).toUInt();
 	// CTimeHelper::sleep(nDelay * 1000);
 
 	exit(0);
