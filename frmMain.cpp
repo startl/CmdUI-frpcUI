@@ -84,7 +84,15 @@ void frmMain::onCmdReadOutput()
 	QTextCodec* pTextCodec = QTextCodec::codecForName("System");
 	assert(pTextCodec != nullptr);
 	QString str = pTextCodec->toUnicode(qba);
-	ui.recvEdit->appendPlainText(str);   
+	ui.recvEdit->appendPlainText(str);
+	// char* myChar = new char[qba.length()];
+	// for (int i = 0; i<qba.length(); i++)
+	// {
+	// 	myChar[i] = qba[i];
+	// }
+	// QString str = QString::fromLocal8Bit(myChar);
+	// ui.recvEdit->appendPlainText(str);
+	// delete myChar;
 }
 
 void frmMain::onCmdReadError()
@@ -150,6 +158,10 @@ void frmMain::dropEvent(QDropEvent* event)
 		for (QString c : list)
 		{
 			c = c.replace("%s", "%1");
+
+#ifdef Q_OS_WIN
+			fileName = fileName.replace("/", "\\");
+#endif
 			c = c.arg(fileName);
 			p->start(host, QStringList() << "/c" << c); //start方式要加/c
 			p->waitForStarted();
