@@ -47,8 +47,8 @@
     <TargetName>PngScale</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutDir>..\..\python\pngScale</OutDir>
-    <TargetName>PngScale</TargetName>
+    <OutDir>D:\Green\[Proxy]\frp_0.33.0_windows_amd64</OutDir>
+    <TargetName>Exe64bitDetectorUI</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
@@ -108,6 +108,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="StringHelper.cpp" />
     <ClCompile Include="TimeHelper.cpp" />
     <QtRcc Include="CmdUI.qrc" />
     <QtUic Include="CmdUI.ui" />
@@ -125,6 +126,7 @@
   <ItemGroup>
     <ClInclude Include="FileHelper.h" />
     <ClInclude Include="Global.h" />
+    <ClInclude Include="StringHelper.h" />
     <ClInclude Include="TimeHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

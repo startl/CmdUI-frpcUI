@@ -81,7 +81,9 @@ void frmMain::onCmdReadOutput()
 {
 	QProcess* p = static_cast<QProcess*>(sender());
 	QByteArray qba = p->readAllStandardOutput();
-	QTextCodec* pTextCodec = QTextCodec::codecForName("System");
+
+	QTextCodec* pTextCodec = QTextCodec::codecForName("GBK");
+	//QTextCodec* pTextCodec = QTextCodec::codecForName("System");
 	assert(pTextCodec != nullptr);
 	QString str = pTextCodec->toUnicode(qba);
 	ui.recvEdit->appendPlainText(str);
@@ -90,8 +92,8 @@ void frmMain::onCmdReadOutput()
 	// {
 	// 	myChar[i] = qba[i];
 	// }
-	// QString str = QString::fromLocal8Bit(myChar);
-	// ui.recvEdit->appendPlainText(str);
+	// QString str2 = QString::fromLocal8Bit(myChar);
+	// ui.recvEdit->appendPlainText(str2);
 	// delete myChar;
 }
 
@@ -143,6 +145,9 @@ void frmMain::dropEvent(QDropEvent* event)
 
 	QString fileName = urls.first().toLocalFile();
 	if (fileName.isEmpty()) return;
+#ifdef Q_OS_WIN
+	fileName = fileName.replace("/", "\\");
+#endif
 
 	QString host = mCfg->value("base/host", "").toString();
 	if (host.isEmpty()) return;
@@ -155,15 +160,14 @@ void frmMain::dropEvent(QDropEvent* event)
 	if (!cmdDrop.isEmpty())
 	{
 		QStringList list = cmdDrop.split("|");
-		for (QString c : list)
+		for (QString s : list)
 		{
-			c = c.replace("%s", "%1");
-
-#ifdef Q_OS_WIN
-			fileName = fileName.replace("/", "\\");
-#endif
-			c = c.arg(fileName);
-			p->start(host, QStringList() << "/c" << c); //start方式要加/c
+			QString c = s;
+			fileName = "\"" + fileName + "\"";
+			c = c.replace("%s", fileName);
+			//c = "\"" + c + "\"";
+			//p->start(host, QStringList() << "/c" << c); //start方式要加/c
+			p->start(host + " /c " + c);
 			p->waitForStarted();
 			p->waitForFinished();
 		}
