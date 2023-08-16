@@ -1,3 +1,5 @@
+![image.png](https://raw.githubusercontent.com/startl/BatchUrlGenerator/master/BlogImg20230816131101.png)
+
 Wrap command line programs with a graphical interface GUI, built on VS2019+QT, and can cross platform  
 Using INI file configuration action, it can be used as the UI of general command line program.  
 Of course, it can also be used as the UI interface of FRPC, so that there is no need to display the command line window on the desktop to keep the desktop fresh.  
