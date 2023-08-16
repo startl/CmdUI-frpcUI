@@ -1,4 +1,4 @@
-Command line UI wrapper, based on vs2019 + QT, can cross platform.  
+Wrap command line programs with a graphical interface GUI, built on VS2019+QT, and can cross platform  
 Using INI file configuration action, it can be used as the UI of general command line program.  
 Of course, it can also be used as the UI interface of FRPC, so that there is no need to display the command line window on the desktop to keep the desktop fresh.  
 
@@ -54,9 +54,9 @@ on_ drop=Exe64 bitDetector.exe  -f %s
 OK, if there is no problem, the program starts, drag and drop PE file to the interface, and the detection result will be displayed  
 
 ----------------------------------------------------------------------------------------------------------------------------------
-命令行UI包装程序，基于VS2019+QT构建，可以跨平台。  
-采用ini文件配置动作，可以作为通用命令行程序的UI。  
-当然也可以用来作为frpc的UI界面，这样就不用在桌面上显示命令行窗口，保持桌面清爽。  
+用图形界面GUI包装命令行程序，基于VS2019+QT构建，可以跨平台   
+采用ini文件配置动作，可以作为通用命令行程序的UI
+当然也可以用来作为frpc的UI界面，这样就不用在桌面上显示命令行窗口，保持桌面清爽
 
 特色：  
 ** 将命令行黑窗口程序包装成在托盘显示图标的程序，可以随时控制查看  
