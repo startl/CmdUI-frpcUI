@@ -3,14 +3,16 @@ Using INI file configuration action, it can be used as the UI of general command
 Of course, it can also be used as the UI interface of FRPC, so that there is no need to display the command line window on the desktop to keep the desktop fresh.  
 
 Features:  
-**The command line black window program is packaged as a tray icon, and the command line output is redirected to the text box of the program  
-**Using INI file customization function, you can customize whether to display the tray icon, and click the close button to exit  
-**You can customize actions. When you start, exit, drag and drop to the interface, actions support batch processing and multiple commands at the same time  
+**Wrap the command line black window program into a program that displays icons on the tray, allowing for easy control and viewing at any time
+**Redirect command line output to the text box of this program
+**Using the ini file customization function, you can customize whether to display the tray icon and click the close button to exit
+**Actions can be customized [at startup, exit, and drag and drop to the interface], and actions support batch processing and multiple commands simultaneously
 
-After startup, the icon will be displayed in the system tray, and the software name configured by ini will be displayed when the mouse is put up.  
-Target program default name CmdUI.exe (Windows), which can be changed to another name. When starting, the configuration execution actions in the INI file with the same name as the program will be read.  
+After startup, an icon will be displayed in the system tray, and the software name configured for ini will be displayed when the mouse is placed on it
+
+When the software starts, it will read the configuration and execute actions in the ini file with the same name as the program
+
 **For example, to wrap the UI of FRPC, change the program name to frpcUI.exe , put in frpc.exe In the same directory, create a frcpUI.ini File (utf8 encoding)  
-
 The description of ini is as follows:  
 [base]  
 **The name of the software, the name of the tray display and the name of the upper left corner of the main interface are convenient for multiple runtime identification**  
@@ -57,13 +59,14 @@ OK, if there is no problem, the program starts, drag and drop PE file to the int
 当然也可以用来作为frpc的UI界面，这样就不用在桌面上显示命令行窗口，保持桌面清爽。  
 
 特色：  
-** 将命令行黑窗口程序包装成托盘图标，将命令行输出重定向到本程序的文本框  
+** 将命令行黑窗口程序包装成在托盘显示图标的程序，可以随时控制查看
+** 将命令行输出重定向到本程序的文本框  
 ** 采用ini文件定制功能，可以定制是否显示托盘图标，点击关闭按钮是否退出  
-** 可以定制动作，启动时,退出时,拖放到界面时，动作同时支持批处理和多条命令  
+** 可以定制动作[启动时,退出时,拖放到界面时]，动作同时支持批处理和多条命令
 
-启动后会在系统托盘显示图标，鼠标放上去会显示ini配置的软件名称。  
+启动后会在系统托盘显示图标，鼠标放上去会显示ini配置的软件名称
 
-目标程序默认名称CmdUI.exe(windows)，可以改成其它名字，启动时会读取和程序同名的ini文件里面的配置执行动作。  
+软件启动时会读取和程序同名的ini文件里面的配置执行动作 
 
 **例如**，要作为frpc的UI包装，则将程序名改成frpcUI.exe, 放到frpc.exe同目录下，在同目录下建立一个frcpUI.ini的文件(UTF8编码)  
 ini内容说明如下：  
