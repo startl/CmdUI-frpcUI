@@ -3,10 +3,10 @@ Using INI file configuration action, it can be used as the UI of general command
 Of course, it can also be used as the UI interface of FRPC, so that there is no need to display the command line window on the desktop to keep the desktop fresh.  
 
 Features:  
-**Wrap the command line black window program into a program that displays icons on the tray, allowing for easy control and viewing at any time
-**Redirect command line output to the text box of this program
-**Using the ini file customization function, you can customize whether to display the tray icon and click the close button to exit
-**Actions can be customized [at startup, exit, and drag and drop to the interface], and actions support batch processing and multiple commands simultaneously
+**Wrap the command line black window program into a program that displays icons on the tray, allowing for easy control and viewing at any time  
+**Redirect command line output to the text box of this program  
+**Using the ini file customization function, you can customize whether to display the tray icon and click the close button to exit  
+**Actions can be customized [at startup, exit, and drag and drop to the interface], and actions support batch processing and multiple commands simultaneously  
 
 After startup, an icon will be displayed in the system tray, and the software name configured for ini will be displayed when the mouse is placed on it
 
@@ -59,12 +59,12 @@ OK, if there is no problem, the program starts, drag and drop PE file to the int
 当然也可以用来作为frpc的UI界面，这样就不用在桌面上显示命令行窗口，保持桌面清爽。  
 
 特色：  
-** 将命令行黑窗口程序包装成在托盘显示图标的程序，可以随时控制查看
+** 将命令行黑窗口程序包装成在托盘显示图标的程序，可以随时控制查看  
 ** 将命令行输出重定向到本程序的文本框  
 ** 采用ini文件定制功能，可以定制是否显示托盘图标，点击关闭按钮是否退出  
-** 可以定制动作[启动时,退出时,拖放到界面时]，动作同时支持批处理和多条命令
+** 可以定制动作[启动时,退出时,拖放到界面时]，动作同时支持批处理和多条命令  
 
-启动后会在系统托盘显示图标，鼠标放上去会显示ini配置的软件名称
+启动后会在系统托盘显示图标，鼠标放上去会显示ini配置的软件名称  
 
 软件启动时会读取和程序同名的ini文件里面的配置执行动作 
 
