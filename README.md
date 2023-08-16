@@ -1,3 +1,4 @@
+![image.png](https://raw.githubusercontent.com/startl/BatchUrlGenerator/master/BlogImg20230816131624.png)
 ![image.png](https://raw.githubusercontent.com/startl/BatchUrlGenerator/master/BlogImg20230816131101.png)
 
 Wrap command line programs with a graphical interface GUI, built on VS2019+QT, and can cross platform  
