@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SocketServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\MulticastSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\HttpServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Http.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\WebSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Xdl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Var.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Xml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\IniFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\TextFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Directory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Process.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\TabularDataFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CmdArgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SerialPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SharedMem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\unicodedata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SHA1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Uuid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Array_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\HashMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Vec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Vec3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Vec4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Matrix3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Matrix4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Pose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\IniFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Date.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\TextFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Directory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Library.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Xdl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Xml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\SocketServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\HttpServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Http.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\WebSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\TabularDataFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\CmdArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\SerialPort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\TlsSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\SHA1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{501FE056-B557-3136-93B9-06D524A0D6C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A4ABFCE7-5778-318E-8710-534C5515AABA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

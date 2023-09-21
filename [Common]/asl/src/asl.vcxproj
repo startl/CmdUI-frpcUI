@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E29FACC7-D633-3CC7-ADBC-F45804DD016A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>asl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asld</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">asl.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">asl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">asl.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">asl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";ASL_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";ASL_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl -BG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl --check-stamp-file G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl -BG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl --check-stamp-file G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl -BG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl --check-stamp-file G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl -BG:/[WORK]/[OpenSource]/CmdUI/[Common]/asl --check-stamp-file G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:/[WORK]/[OpenSource]/CmdUI/[Common]/asl/src/CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\String.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Socket.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SocketServer.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\MulticastSocket.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\HttpServer.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Http.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\WebSocket.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Xdl.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Var.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Xml.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\IniFile.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\File.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\TextFile.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Directory.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Path.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Date.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Process.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Console.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Log.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\TabularDataFile.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\CmdArgs.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SerialPort.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SharedMem.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\unicodedata.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\util.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\SHA1.cpp" />
+    <ClCompile Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\src\Uuid.cpp" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\defs.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\String.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Array.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Array_.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Stack.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Map.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\HashMap.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Vec2.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Vec3.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Vec4.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Quaternion.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Matrix.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Matrix3.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Matrix4.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Pose.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\File.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\IniFile.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Date.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\TextFile.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Directory.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Path.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Library.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Thread.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Mutex.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Process.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Var.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Xdl.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Xml.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Socket.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\SocketServer.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\HttpServer.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Http.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\WebSocket.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Console.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Singleton.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Factory.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Log.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\Pointer.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\TabularDataFile.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\CmdArgs.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\SerialPort.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\util.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\TlsSocket.h" />
+    <ClInclude Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\include\asl\SHA1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\[WORK]\[OpenSource]\CmdUI\[Common]\asl\ZERO_CHECK.vcxproj">
+      <Project>{88CE7C82-9986-3BA7-9079-8C179521FAD3}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,76 @@
+April 27, 2020 -- The wxWidgets team is pleased to announce a
+major new release of our open source framework for the development
+of native cross-platform applications in C++.
+
+wxWidgets 3.0.5 is a stable bug fix release in 3.0 branch and is
+available at
+
+	https://github.com/wxWidgets/wxWidgets/releases/tag/v3.0.4/
+
+Please choose the archive format suitable for your platform, i.e. 7z
+or ZIP for Windows platforms and tar.bz2 for the Unix systems
+including OS X (all archives contain sources for all wxWidgets ports
+but they use different line endings) and follow the instructions in
+readme.txt file for installing it. Notice that if you decide to use
+the Windows installer (.exe file) you still need to build wxWidgets
+as only sources, not binaries, are installed.
+
+We also provide the pre-built versions of wxMSW libraries for the
+selected compilers.
+
+
+This is a bug fix release with no significant new features compared to
+the previous 3.0.x releases and compatible with them at both the API
+and the ABI level (i.e. all applications linked against earlier 3.0.x
+DLLs or shared libraries will continue to work when using 3.0.4
+libraries).
+
+The full list of changes in this release is available at
+
+https://raw.githubusercontent.com/wxWidgets/wxWidgets/v3.0.4/docs/changes.txt
+
+(starting from the line 583, or search for "3.0.5" in this file), here are
+some selected ones:
+
+* In all ports:
+- Support nullptr in wxPrintf() and other pseudo-vararg functions.
+- Fix problem with wx-config installation and use under NetBSD (wiz).
+- Avoid spurious errors on thread creation under NetBSD.
+- Improve stock items consistency and aesthetics (dhowland).
+- Implement wxTextCtrl::HitTest() for single line controls.
+- Improve wxSVGFileDC to support more of wxDC API (Maarten Bent).
+
+* In wxGTK:
+- Fix position of popup menus shown in wxListCtrl.
+- Fix not showing wxInfoBar with GTK+ 3 < 3.22.29.
+- Potentially incompatible change: wxDataViewModel::Cleared() now works as
+  documented cross-platform.  Previously on wxGTK it just emptied the model
+  rather than triggering a reload of the model.  If you are working around the
+  broken behaviour with wxGTK-specific code in your application you should
+  check that your application works correctly with this change.
+- Return appropriate values for some previously hard-coded system colours.
+
+* In wxMSW:
+- Fix handling of AUX2 mouse button events (Trylz).
+- Honour alignment flags for multiline buttons using custom colours too.
+- Fix crash when using wxCHMHelpController() in 64 bit builds (Xlord2).
+
+
+If you are upgrading from wxWidgets 2.8 or earlier, please read the
+"INCOMPATIBLE CHANGES" section in the beginning of this file and the
+corresponding part of the manual at
+
+    http://docs.wxwidgets.org/3.0.4/overview_changes_since28.html
+
+
+
+We recommend that you upgrade to wxWidgets 3.0.5 if you already use an
+earlier wxWidgets 3.0.x release, the upgrade is completely transparent
+and doesn't require any changes in the existing code. If you are still
+using wxWidgets 2.8 or earlier, please consider updating to wxWidgets
+3.0 to profit from all the new functionality.
+
+
+We hope that you will enjoy using the new release!
+
+Vadim Zeitlin, on behalf of wxWidgets development team.
